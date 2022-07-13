@@ -188,11 +188,9 @@
 
 	// Loading page
 	var loaderPage = function () {
-		$(".fh5co-loader").fadeOut("slow");
-	};
-	var kartu = function () {
-		$("#kartu").fadeOut("slow");
-		$("body").css('overflow', 'visible');
+		setTimeout(function () {
+			$(".fh5co-loader").fadeOut("slow");
+		}, 5000)
 	};
 	var counter = function () {
 		$('.js-counter').countTo({
