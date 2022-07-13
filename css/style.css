@@ -463,13 +463,17 @@ figure {
   transform: scale(1.2);
 }
 
-.fh5co-cover {
-  height: 900px;
-  background-size: cover;
+#page #fh5co-header.fh5co-cover {
+  background-image: url(../images/bg1.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
+
 .fh5co-cover .overlay {
   z-index: 0;
   position: absolute;
@@ -2115,6 +2119,9 @@ form label {
 @media screen and (max-width: 468px) {
   .maps-card {
     height: 50%;
+  }
+  .fh5co-cover .overlay {
+    margin-bottom: 25px;
   }
 }
 
