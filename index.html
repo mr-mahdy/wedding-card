@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+	<link rel="icon" type="image/x-icon" href="images/love.png">
+	<title>Putri & Andrean</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Putri & Andrean" />
+	<meta name="author" content="agungalfarisy" />
+
+	<meta http-equiv="cache-control" content="no-cache">
+
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
+		type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+		.container-audio {
+			position: sticky;
+			z-index: 2;
+		}
+
+		.audio-nav {
+			position: sticky;
+		}
+
+		.audio-nav .play img {
+			bottom: 100px;
+			right: 20px;
+		}
+
+		blockquote {
+			border-left: none !important;
+		}
+
+		.kotak {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.kotak img {
+			padding-bottom: 20px;
+		}
+
+		@media only screen and (max-width: 480px) {
+			#fh5co-header.fh5co-cover {
+				background-position: -210px -25px !important;
+			}
+
+			.row {
+				margin-right: 0px !important;
+			}
+
+			.cover {
+				justify-content: center !important;
+				flex-direction: column !important;
+			}
+
+			.cover .kotak img {
+				width: 105px;
+			}
+		}
+
+		@media only screen and (max-width: 425px) {
+			#fh5co-header.fh5co-cover {
+				background-position: -240px -25px !important;
+			}
+		}
+
+		@media only screen and (max-width: 320px) {
+			#fh5co-header.fh5co-cover {
+				background-position: -300px -25px !important;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="kartu" class="animate-box">
+		<div class="row text-center" style=" position: relative;
+        top: 50%;
+        transform: translateY(-50%);">
+			<div class="col-md-12">
+				<h3>Undangan Pernikahan</h3>
+				<h1>Putri<br>&amp;<br>Andrean</h1>
+				<p>Kepada Bapak/Ibu/Saudara/i</p>
+				<p id="tamu"></p>
+				<button id="buka-undangan" class="btn btn-default btn-sm"><i class="icon-mail"></i> Buka
+					Undangan</button>
+			</div>
+		</div>
+	</div>
+	<div class="container-audio">
+		<div class="audio-nav">
+			<div class="play"><img id="playbtn" src="images/play.png" onclick="togglePlay()" alt="play" /></div>
+			<audio id="ibu" src="audio/ibu.mp3"></audio>
+		</div>
+	</div>
+	<div class="fh5co-loader"></div>
+
+
+
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/bg1.jpg); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+	position: relative; 
+	background-size: cover;" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<h1>Putri &amp; Andrean</h1>
+							<!-- <h2>We Are Getting Married</h2> -->
+							<div class="simply-countdown simply-countdown-one"></div>
+							<!-- <p><a href="#" class="btn btn-default btn-sm">Save the date</a></p> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="fh5co-couple">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Assalamualaikum Warahmatullahi Wabarakatuh</h2>
+					<h5>Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i sekalian untuk menghadiri
+						acara pernikahan kami :</h5>
+					<!-- <p>We invited you to celebrate our wedding</p> -->
+				</div>
+			</div>
+			<div class="couple-wrap animate-box">
+				<div class="couple-half">
+					<div class="groom">
+						<img src="images/putriprofile.PNG" alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-groom">
+						<h3>Putri Syamsiah Handayani</h3>
+						<a href="https://www.instagram.com/putrisyamsiahh/"><i class="icon-instagram"></i></a>
+						<p>Putri pertama dari :</p>
+						<p>Bapak Khairul Anwar, S.H dan Ibu Herni Suryaningsih</p>
+					</div>
+				</div>
+				<p class="heart text-center"><i class="icon-heart2"></i></p>
+				<div class="couple-half">
+					<div class="bride">
+						<img src="images/andreprofile.PNG" alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-bride">
+						<h3>Andrean Putra Utama</h3>
+						<a href="https://www.instagram.com/tongat_tigan25/"><i class="icon-instagram"></i></a>
+						<p>Putra Pertama dari :</p>
+						<p>Bapak Fahrudin Tarigan dan Ibu Misniati</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/bg2.JPG);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<!-- <span>Our Special Events</span> -->
+					<h2>Hari Yang Dinanti</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-6 text-center">
+					<div class="event-wrap animate-box">
+						<h3><b>Akad Nikah</b></h3>
+						<div class="event-col">
+							<i class="icon-calendar"></i>
+							<span>Sabtu, 23 Juli 2022</span>
+							<span>Pukul 08.00 WIB s/d Selesai</span>
+						</div>
+						<div class="event-col">
+							<i class="icon-location-pin"></i>
+							<span><b>Graha Darusalam</b></span>
+							<span>Jl Sultan Mansyur N0. 400 Bukit Lama Kec. Ilir Barat I Kota Palembang</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 text-center">
+					<div class="event-wrap animate-box">
+						<h3><b>Resepsi Pernikahan</b></h3>
+						<div class="event-col">
+							<i class="icon-calendar"></i>
+							<span>Sabtu, 23 Juli 2022</span>
+							<span>Pukul 10.00 WIB s/d Selesai</span>
+						</div>
+						<div class="event-col">
+							<i class="icon-location-pin"></i>
+							<span><b>Graha Darusalam</b></span>
+							<span>Jl Sultan Mansyur N0. 400 Bukit Lama Kec. Ilir Barat I Kota Palembang</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center" style="margin-top: 20px;">
+				<div class="col-md-12">
+					<div class="animate-box">
+						<a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding+of+Putri+%26+Andrean&location=Graha+Darusalam%2C+Jl.+Sultan+M.+Mansyur+No.400%2C+Bukit+Lama%2C+Kec.+Ilir+Bar.+I%2C+Kota+Palembang%2C+Sumatera+Selatan+30137&dates=20220723T010000Z%2F20220723T080000Z"
+							class="btn btn-default btn-sm" target="_blank" id="save-date"><i class="icon-calendar"></i>
+							Save the
+							date</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" style="margin-top: 30px;" id="gmaps">
+				<div class="col-md-12 col-sm-12 text-center">
+					<div class="event-wrap animate-box">
+						<div style="width: 100%;" class="maps-card"><iframe width="100%" height="100%" frameborder="0"
+								scrolling="no" marginheight="0" marginwidth="0"
+								src="https://maps.google.com/maps?width=100%25&amp;height=100%&amp;hl=en&amp;q=Graha%20darusalam%20Jl.%20Sultan%20M.%20Mansyur%20No.400,%20Bukit%20Lama,%20Kec.%20Ilir%20Bar.%20I,%20Kota%20Palembang,%20Sumatera%20Selatan+(My%20Busigrness%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+									href="https://www.gps.ie/farm-gps/">gps for tractors</a></iframe></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-couple-story">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<!-- <span>We Love Each Other</span> -->
+					<h2>Cerita Perjalanan Kami</h2>
+					<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0">
+					<ul class="timeline animate-box">
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(images/andreprofile.PNG);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Pertama Kali Kenal</h3>
+									<span class="date">Selasa, 11 Desember 2018</span>
+								</div>
+								<div class="timeline-body">
+									<p>Saat itu secara tidak sengaja pertama kali perkenalan di gedung sky bridge
+										bandara SMB II Palembang karena suatu pekerjaan. Pertemuan tersebut hanya
+										bertanya mengenai pekerjaan satu sama lain dan saling bertukaran sosmed untuk
+										mempertambah pertemanan.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(images/putriprofile.PNG);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Lost Contact</h3>
+									<span class="date">2019 – 2020</span>
+								</div>
+								<div class="timeline-body">
+									<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p> -->
+								</div>
+							</div>
+						</li>
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(images/andreprofile.PNG);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Pertemuan Ke-2</h3>
+									<span class="date">Rabu, 27 Oktober 2021</span>
+								</div>
+								<div class="timeline-body">
+									<p>Setelah sekian lama tidak ketemu, secara tidak sengaja ketemu di stasiun LRT Bumi
+										Sriwijaya, pertemuan tersebut hanya saling tegur sapa.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(images/putriprofile.PNG);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Pertemuan Ke-3</h3>
+									<span class="date">Senin, 3 januari 2022</span>
+								</div>
+								<div class="timeline-body">
+									<p>Setelah secara intens chattingan di DM dan WA Untuk ketiga kalinya kami bertemu
+										kembali dengan secara janjian di stasiun LRT Dishub dan saling bercerita tentang
+										diri masing-masing.</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(images/andreprofile.PNG);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Pertemuan Ke-4</h3>
+									<span class="date">Jumat, 14 Januari 2022</span>
+								</div>
+								<div class="timeline-body">
+									<p>Pada pertemuan ini, Andrean langsung mengatakan niat serius kepada keluarga
+										Putri.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(images/putriprofile.PNG);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Pertemuan Ke-5</h3>
+									<span class="date">Kamis, 20 Januari 2022</span>
+								</div>
+								<div class="timeline-body">
+									<p>Setelah andrean mengatakan niat seriusnya pada pertemuan ini kedua belah pihak
+										keluarga saling bersilaturahmi melalui Video Call dikarenakan jarak antara kedua
+										keluarga sangat jauh Palembang dan Medan.</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(images/andreprofile.PNG);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Pertemuan Ke-6</h3>
+									<span class="date">Selasa, 25 Januari 2022</span>
+								</div>
+								<div class="timeline-body">
+									<p>Untuk pertemuan sekian kalinya kedua belah pihak keluarga berdiskusi untuk
+										menentukan jadwal langkah selanjutnya yaitu lamaran, akhirnya setelah diskusi
+										ditentukan tanggal lamaran pada tanggal 7 Februari 2022.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="fh5co-gallery" class="fh5co-section-gray">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<!-- <span>Our Memories</span> -->
+					<h2>Gallery</h2>
+					<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
+				</div>
+			</div>
+
+			<!-- Images used to open the lightbox -->
+			<div class="row" id="gallery">
+				<div class="col-md-3 animate-box">
+					<div class="card" style="background-color: white; padding: 5px;">
+						<img src="images/1.JPG" onclick="openModal();currentSlide(1)">
+					</div>
+				</div>
+				<div class="col-md-3 animate-box">
+					<div class="card" style="background-color: white; padding: 5px;">
+						<img src="images/2.JPG" onclick="openModal();currentSlide(2)">
+					</div>
+				</div>
+				<div class="col-md-3 animate-box">
+					<div class="card" style="background-color: white; padding: 5px;">
+						<img src="images/3.JPG" onclick="openModal();currentSlide(3)">
+					</div>
+				</div>
+				<div class="col-md-3 animate-box">
+					<div class="card" style="background-color: white; padding: 5px;">
+						<img src="images/4.JPG" onclick="openModal();currentSlide(4)">
+					</div>
+				</div>
+			</div>
+
+			<!-- The Modal/Lightbox -->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+
+					<div class="mySlides">
+						<div class="numbertext">1 / 4</div>
+						<img src="images/1.JPG" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2 / 4</div>
+						<img src="images/2.JPG" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/3.JPG" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">4 / 4</div>
+						<img src="images/4.JPG" style="width:100%">
+					</div>
+
+					<!-- Next/previous controls -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<!-- Caption text -->
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+					<!-- Thumbnail image controls -->
+					<div class="column">
+						<img class="demo" id="a" src="images/1.JPG" onclick="currentSlide(1)">
+					</div>
+
+					<div class="column">
+						<img class="demo" id="a" src="images/2.JPG" onclick="currentSlide(2)">
+					</div>
+
+					<div class="column">
+						<img class="demo" id="a" src="images/3.JPG" onclick="currentSlide(3)">
+					</div>
+
+					<div class="column">
+						<img class="demo" id="a" src="images/4.JPG" onclick="currentSlide(4)">
+					</div>
+				</div>
+			</div>
+
+			<div class="row" style="margin-top: 100px;">
+				<div class="col-md-12 animate-box">
+					<div class="wrap-testimony">
+						<div class="owl-carousel-fullwidth">
+							<div class="item">
+								<div class="testimony-slide active text-center">
+									<!-- <figure>
+							<img src="images/couple-1.jpg" alt="user">
+						</figure> -->
+									<span>وَمِنْ كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ</span>
+									<blockquote>
+										<p>“Dan segala sesuatu Kami Ciptakan Berpasang-pasangan supaya kamu mengingat
+											kebesaran Allah.”</p>
+										<p>(QS Az-Zariyat: 49)</p>
+									</blockquote>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testimony-slide active text-center">
+									<!-- <figure>
+							<img src="images/couple-2.jpg" alt="user">
+						</figure> -->
+									<span>وَقَالَ عَلَيْهِ الصَّلَاةُ وَالسَّلَامُ: {اِلْتَمِسُوا الرِّزْقَ
+										بِالنِّكَاحِ.</span>
+									<blockquote>
+										<p>"Dari Ibnu Abbas RA, Rasulullah SAW bersabda: “Carilah rezeki dengan
+											menikah.”</p>
+										<p>(HR Ad-Dailami)</p>
+									</blockquote>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testimony-slide active text-center">
+									<!-- <figure>
+							<img src="images/couple-3.jpg" alt="user">
+						</figure> -->
+									<span>فَجَعَلَ مِنْهُ الزَّوْجَيْنِ الذَّكَرَ وَالْأُنْثَىٰ</span>
+									<blockquote>
+										<p>“Lalu Allah menjadikan daripadanya sepasang: laki-laki dan perempuan.”</p>
+										<p>(QS Al-Qiyamah: 39)</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="fh5co-testimonial">
+		<div class="container">
+
+			<div class="row pesan">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>Protokol Kesehatan</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12" style="margin-top:-50px">
+						<p class="text-center animate-box" style="margin-bottom:50px">Dengan tidak mengurangi rasa
+							hormat.
+							Sehubungan dengan adanya wabah Covid-19, dimohon untuk seluruh tamu undangan agar melakukan
+							pengecekan suhu sebelum memasuki area acara, selalu menggunakan masker, menjaga kebersihan
+							tangan dan menjaga jarak aman selama acara berlangsung.</p>
+						<div class="cover" style="display: flex;
+						justify-content: space-evenly;
+						align-items: center;">
+							<div class="kotak animate-box">
+								<div class="img-cover"><img src="images/11.png" alt=""></div>
+								<h4 class="text-cover text-center" style="padding:5px">Menggunakan Masker</h4>
+							</div>
+							<div class="kotak animate-box">
+								<div class="img-cover"><img src="images/22.png" alt=""></div>
+								<h4 class="text-cover text-center" style="padding:5px">Menjaga Kebersihan Tangan</h4>
+							</div>
+							<div class="kotak animate-box">
+								<div class="img-cover"><img src="images/33.png" alt=""></div>
+								<h4 class="text-cover text-center" style="padding:5px">Menggunakan Hand Sanitizer</h4>
+							</div>
+							<div class="kotak animate-box">
+								<div class="img-cover"><img src="images/44.png" alt=""></div>
+								<h4 class="text-cover text-center" style="padding:5px">Menjaga Jarak</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-started" class="fh5co-section-gray">
+		<!-- <div class="overlay"></div> -->
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<p style="color: black;">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu /
+						Saudara / i. berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih.</p>
+					<h2 style="color: #1E90FF;">Wassalamualaikum Warahmatullahi Wabarakatuh</h2>
+
+				</div>
+			</div>
+			<!-- <div class="row animate-box">
+				<div class="col-md-10 col-md-offset-1">
+					<form class="form-inline">
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group">
+								<label for="name" class="sr-only">Name</label>
+								<input type="name" class="form-control" id="name" placeholder="Name">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group">
+								<label for="email" class="sr-only">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="Email">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
+						</div>
+					</form>
+				</div>
+			</div> -->
+		</div>
+	</div>
+
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2022 Putri & Andrean</small>
+						<small class="block">Designed by <a href="https://www.instagram.com/agungalfarisy/"
+								target="_blank">Agung Alfarisy</a></small>
+					</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="https://www.instagram.com/agungalfarisy/"><i class="icon-instagram"></i></a>
+							</li>
+							<li><a href="https://github.com/agungalfarisy"><i class="icon-github"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/akhmad-agung-alfarisy-204585202/"><i
+										class="icon-linkedin"></i></a></li>
+							<li><a href="https://dribbble.com/agungalfarisy"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+	<script src="js/simplyCountdown.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/fontawesome.min.js"></script>
+
+	<script src="http://malsup.github.io/jquery.blockUI.js"></script>
+
+	<script>
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
+		const tamu = urlParams.get('tamu');
+
+		document.getElementById('tamu').innerHTML = tamu;
+		var d = new Date("Jul 23, 2022 17:00:00");
+		// default example
+		window.onbeforeunload = function () {
+			window.scrollTo(0, 0);
+		}
+		simplyCountdown('.simply-countdown-one', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate(),
+			hours: d.getHours(),
+			minutes: d.getMinutes(),
+			seconds: d.getSeconds(),
+		});
+
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate(),
+			hours: d.getHours(),
+			minutes: d.getMinutes(),
+			seconds: d.getSeconds(),
+		});
+
+
+		let playing = true;
+
+		const song1 = document.getElementById("ibu");
+
+		function togglePlay() {
+			if (playing) {
+				togglePlay.src = "audio/ibu.mp3"
+				togglePlay.alt = "play"
+				document.getElementById("playbtn").src = "images/pause.png";
+
+
+				song1.play();
+				playing = false;
+
+			} else {
+				togglePlay.src = "audio/ibu.mp3"
+				togglePlay.alt = "pause"
+				document.getElementById("playbtn").src = "images/play.png";
+
+				song1.pause();
+				playing = true;
+
+			}
+		}
+
+
+		// Open the Modal
+		function openModal() {
+			document.getElementById("myModal").style.display = "block";
+		}
+
+		// Close the Modal
+		function closeModal() {
+			document.getElementById("myModal").style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("demo");
+			var captionText = document.getElementById("caption");
+			if (n > slides.length) {
+				slideIndex = 1
+			}
+			if (n < 1) {
+				slideIndex = slides.length
+			}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+			captionText.innerHTML = dots[slideIndex - 1].alt;
+		}
+
+		// function UnLoadWindow() {
+		// 	document.getElementById("kartu-undangan").style.width = "100%";
+		// 	document.getElementById("kartu-undangan").style.height = "100%";
+		// }
+
+		// window.onbeforeunload = UnLoadWindow;
+	</script>
+
+</body>
+
+</html>
